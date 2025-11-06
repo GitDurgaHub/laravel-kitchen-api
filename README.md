@@ -41,6 +41,11 @@ PHP 8.2+ and Composer (only if you want to run commands outside Docker)
 git clone https://github.com/GitDurgaHub/laravel-kitchen-api/laravel-kitchen-api.git
 cd laravel-kitchen-api
 
+Run setup
+composer install
+cp .env.example .env
+php artisan key:generate
+
 Then build and start containers:
 docker compose up -d --build
 
